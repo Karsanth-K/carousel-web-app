@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Slider.css" rel="stylesheet">
+    <title>Slider</title>
+</head>
+<body>
+    <Video src="Video/spider.mp4" class="bg_vid" autoplay loop muted></Video>
+    <div class="display_box">
+        <div class="container">
+            <div class="cntnt1 cntnt">
+                <img src="https://wallpaperaccess.com/full/19693.jpg" alt="img">
+            </div>
+            <div class="cntnt2 cntnt">
+                <img src="https://wallpapercave.com/wp/wp3636412.jpg" alt="img">
+            </div>
+            <div class="cntnt3 cntnt">
+                <img src="https://c4.wallpaperflare.com/wallpaper/997/794/382/miles-morales-spiderman-miles-morales-spider-man-peter-parker-spider-gwen-hd-wallpaper-preview.jpg" alt="img">
+            </div>
+            <div class="cntnt4 cntnt">
+                <img src="https://c4.wallpaperflare.com/wallpaper/576/838/565/spiderman-4k-artwork-hd-wallpaper-preview.jpg" alt="img">
+            </div>
+            <div class="cntnt5 cntnt">
+                <img src="https://c4.wallpaperflare.com/wallpaper/905/381/275/spiderman-ps4-spiderman-games-hd-wallpaper-preview.jpg" alt="img">
+            </div>
+        </div>
+        <input type="color" class="inp">
+        <button class="right">▶</button>
+        <button class="left">◀</button>
+    </div>
+    <div class="add_or_remove">
+        <div class="items" id="add">
+            <h2>Add a new slide to the slider</h2>
+            <div class="img_source_link">
+                <h4 style="margin-left: 1%;">Image source<br><small>( valid url )</small></h4>
+                <input type="text" id="img_src" placeholder="(if required)"/>
+            </div>
+            <div class="choose_clr">
+                <h4>Choose slider Color</h4>
+                <input type="color" id="clr_select">
+            </div>
+            <button onclick="add_element()">ADD</button>
+        </div>
+        <div class="items" id="remove">
+            <h2>Remove a slide</h2>
+            <div class="img_source_link">
+                <h4 style="margin-left: 1%;">Slide position</h4>
+                <input type="number" id="slide" placeholder="slide index"/>
+            </div>
+            <button onclick="delete_element()">DELETE</button>
+        </div>
+    </div>
+    <div>
+        <button>Add or Remove elements</button>
+    </div>
+    <script src="Slider.js"></script>
+</body>
+</html>
